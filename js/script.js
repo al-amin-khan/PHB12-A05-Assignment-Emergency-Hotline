@@ -2,8 +2,20 @@ let histories = [];
 
 const cards = document.getElementsByClassName("call");
 const copyButtons = document.getElementsByClassName("btn-copy");
+const heartButtons = document.getElementsByClassName("btn-heart");
+
 const historyContainer = document.getElementById("history");
 const coinElement = document.getElementById("available-coin");
+
+
+for (let index = 0; index < heartButtons.length; index++) {
+    const heart = heartButtons[index];
+    heart.addEventListener("click", function () {
+        const heartCount = document.getElementById("heart-count").innerText;
+        document.getElementById("heart-count").innerText = parseInt(heartCount) + 1;
+    });
+}
+
 
 for (let index = 0; index < cards.length; index++) {
     const card = cards[index];
