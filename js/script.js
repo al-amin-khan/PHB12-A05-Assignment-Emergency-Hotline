@@ -35,6 +35,7 @@ for (let index = 0; index < cards.length; index++) {
             alert("Insufficient coins to make a call.");
             return;
         } else {
+            alert("Calling " + ServiceTitle + " at " + ServiceCallNumber + "....");
             coinElement.innerText = parseInt(coin) - 20;
         }
 
