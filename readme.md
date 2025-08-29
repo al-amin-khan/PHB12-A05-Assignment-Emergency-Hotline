@@ -1,5 +1,5 @@
 1. What is the difference between  **getElementById, getElementsByClassName, and querySelector / querySelectorAll**
-   Answer:
+   **Answer:**
    **getElementById** → finds one element by its unique id.
    **getElementsByClassName** → finds all elements with the same class and return array like object.
    **querySelector** → finds the first element that matches a CSS selector.
@@ -12,6 +12,7 @@
    ```javascript
    const containerDiv = document.getElementById('container');
    const newParagraph = document.createElement('p');
+   newParagraph.textContent = 'This paragraph was added dynamically with JavaScript.';
    containerDiv.appendChild(newParagraph);
    ```
    ---
